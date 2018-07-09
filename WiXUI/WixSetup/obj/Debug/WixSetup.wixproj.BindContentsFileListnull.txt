@@ -1,0 +1,2 @@
+..\WinApp\bin\Debug\ReadMe.txt
+..\WinApp\bin\Debug\Winapp.exe

@@ -1,0 +1,19 @@
+{
+  "contact": "Contacto",
+  "phoneNumber": "Número de Telefone",
+  "countryCode": "Código de País",
+  "email": "Endereço de Email",
+  "addButton": " + Adicionar",
+  "primary": "Primário",
+  "removeButton": " - Eliminar",
+  "phoneMissing": "Por favor, inserir um número de telefone válido antes de continuar",
+  "maximumMobile": "O máximo de 4 contactos do tipo Telemóvel foi alcançado",
+  "maximumHome": "O máximo de 4 contactos do tipo Telefone de Casa foi alcançado",
+  "maximumWork": "O máximo de 4 contactos do tipo Telefone de Trabalho foi alcançado",
+  "maximumContacts": "Atingiu o limite máximo do tipo de contactos",
+  "emailMissing": "Por favor, inserir um endereço de email válido antes de continuar",
+  "maximumEmail": "No máximo 4 endereços de email podem ser adicionados",
+  "duplicatePhoneNo": "O número de telefone não pode ser duplicado",
+  "provideMobileNo": "Por favor, forneça pelo menos um contacto de telemóvel",
+  "duplicateEmailAddress": "O endereço de email não pode ser duplicado"
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <UI Id="CountryDialogUI">
+
+      <Property Id="Proceed">proceedbtn</Property>
+      <Binary Id="proceedbtn" SourceFile="images/proceedbtn.bmp"/>
+      <Binary Id="headerPic" SourceFile="images/header.bmp"/>
+
+      <Dialog Id="CountryDialog" Width="400" Height="300" Title="Clarity Installer">
+
+        <Control Id="background" Type="Bitmap" Text="bgPic" Height="300" Width="400" X="0" Y="0" TabSkip="no" />
+        <Control Id="header" Type="Bitmap" Text="headerPic" Height="50" Width="400" X="0" Y="0" TabSkip="no" />
+        <Control Id="headerText"  Type="Text" X="70" Y="10" Width="350" Height="40" Transparent="yes" Text="{\TahomaBig}Country Selection" />
+
+        <Control Id="countryLabel" Type="Text" X="95" Y="115" Height="17" Width="65" Transparent="yes" Text="{\TahomaNormal}Country:" />
+        <Control Id="countryComboBox" Type="ComboBox" ComboList="yes" X="155" Y="112" Width="120" Height="17" Property="COUNTRIES" />
+
+        <Control Id="proceedButton" Type="PushButton" Text="[Proceed]" Height="62" Width="222" X="90" Y="180" Bitmap="yes">
+          <!--<Publish Event="DoAction" Value="IisScript_CA">1</Publish>-->
+          <Publish Event="EndDialog" Value="Return">1</Publish>
+        </Control>
+
+        <Control Id="cancelButton" Type="PushButton" Text="[Cancel]" Height="40" Width="144" X="135" Y="245" Cancel="yes" Bitmap="yes">
+          <Publish Event="EndDialog" Value="Exit" />
+        </Control>
+
+      </Dialog>
+
+    </UI>
+    
+    <CustomAction Id="GetBranches"
+            BinaryKey="JSActions"
+            JScriptCall="GetBranchesCA"
+            Execute="immediate"
+            Return="check"/>
+    
+    <CustomAction Id="SetCustomActionDataValues"
+                  Property="SELECTEDCOUNTRY" 
+                  Value="[COUNTRIES]" />
+
+
+      <CustomAction Id="CopyThis" ExeCommand="cmd /c copy /y MyLogFile.txt C:\Program Files (x86)\ClarityNew" Directory="INSTALLFOLDER" Impersonate="no" Execute="deferred" Return="asyncWait" />
+
+      <InstallExecuteSequence>
+        <Custom Action="CopyThis" After="InstallFiles" ></Custom>
+      </InstallExecuteSequence>
+
+    <InstallUISequence>
+      <Show Dialog="CountryDialog" After="SetupDialog" />
+      <Custom Action="SetCustomActionDataValues" Before="GetBranches" />
+      <Custom Action='GetBranches' Before='BranchDialog'></Custom>
+    </InstallUISequence>
+
+  </Fragment>
+  
+</Wix>

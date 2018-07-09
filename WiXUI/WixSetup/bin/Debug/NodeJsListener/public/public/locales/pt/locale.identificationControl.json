@@ -1,0 +1,16 @@
+{		
+		"type": "Tipo de Identificação",
+		"value": "Número de Identificação",
+		"country": "País de Origem",
+    "date": "Data de Validade",
+		"validate":"Validar",
+		"identificationControllerValidation":"Validação de Controlador de Identificação",
+		"validId":"Verificação de Número de Identificação realizada",
+		"invalidId":"Falhou a Verificação de Número de Identificação",
+		"validateID":"Por favor, validar o Número de Identificação.",
+		"validateLesothoID":"Por favor, fornecer Informação de Endereço do Lesoto para Tipo de Identificação: Número de Identidade do Lesoto",
+		"validateSaID":"Por favor, fornecer Informação de Endereço da África do Sul para Tipo de Identificação: Número de Identidade Social",
+		"firstName":"O primeiro nome é obrigatório",
+		"lastName":"O último nome é obrigatório",
+		"invalid":"O Número de Identificação não é válido"
+}

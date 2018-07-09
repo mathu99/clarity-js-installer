@@ -1,0 +1,165 @@
+<link rel="import" href="connected-clients-filter-behavior.html" />
+<link rel="import" href="../infrastructure-services/infrastructure-services-behavior.html" />
+<link rel="import" href="../../Scripts/Libs/Polymer/polymer.html"  />
+
+<dom-module id="connected-clients-filter-component">
+    <template>
+            <div>
+                <span class="komodo-heading">{{clientTracker}}</span>
+                <span class="float-right">
+                    <b>
+                        <a href="#/home">&lt;{{back}}</a>
+                    </b>
+                </span>
+            </div>
+            <hr />
+        <template is="dom-if" if="{{noRecords}}">
+            <label class="sub-heading">{{noRecordsLabel}}</label>
+        </template>
+        <div class="container-fluid" hidden$="{{noRecords}}">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="sub-heading">{{filterListBy}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label>{{dateUpdatedLabel}}</label><br />
+                    <input type="text" name="dateUpdated" id="connectedClientsDateUpdated" value="{{filterDate::input}}" placeholder="DD/MM/YYYY"/>
+                </div>
+                <div class="col-md-4">
+                    <label>{{machineNameLabel}}</label><br />
+                    <input type="text" name="machineName" id="connectedClientsMachineName" value="{{filterMachineName::input}}" />
+                </div>
+                <div class="col-md-4">
+                    <label>{{versionLabel}}</label><br />
+                    <input type="text" name="version" id="connectedClientsVersion" value="{{filterVersion::input}}" />
+                </div>
+                <div class="float-right">
+                    <button class="btn btn-primary visible" on-tap="filterListHandler">
+                        {{searchLabel}}
+                    </button>
+                    <button class="btn btn-inverse visible" on-tap="clearFiltersHandler">
+                        {{clearLabel}}
+                    </button>
+                    <button class="btn btn-success visible" on-tap="refreshHandler">
+                        {{refreshLabel}}
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+   </template>
+</dom-module>
+<script>
+    Polymer({
+        is: "connected-clients-filter-component",
+        behaviors: [ConnectedClientsFilterBehavior, InfrastructureServicesBehavior],
+        properties: {
+            countryCode: {
+                type: String
+            },
+            clientTracker: {
+                type : String
+            },
+            back: {
+                type: String
+            },
+            filterListBy: {
+                type: String
+            },
+            dateUpdatedLabel: {
+                type: String
+            },
+            machineNameLabel: {
+                type: String
+            },
+            versionLabel: {
+                type: String
+            },
+            searchLabel: {
+                type: String
+            },
+            clearLabel: {
+                type: String
+            },
+            refreshLabel: {
+                type: String
+            },
+            ipAddressLabel: {
+                type: String
+            },
+            noMatchesLabel: {
+                type: String
+            },
+            noRecordsLabel: {
+                type: String
+            },
+            fullConnectedClientList: {
+                type: Array,
+                notify: true
+            },
+            filteredConnectedClientList: {
+                type: Array,
+                notify: true
+            },
+            filterDate: {
+                type: String,
+                notify: true
+            },
+            filterMachineName: {
+                type: String,
+                notify: true
+            },
+            filterVersion: {
+                type: String,
+                notify: true
+            },
+            noRecords: {
+                type: Boolean,
+                notify: true
+            },
+            noMatches: {
+                type: Boolean,
+                notify: true
+            }
+        },
+        ready: function () {
+            this.clientTracker = this.localizationService.value('locale.clientTracker:clientTracker');
+            this.back = this.localizationService.value('locale.clientTracker:back');
+            this.filterListBy = this.localizationService.value('locale.clientTracker:filterListBy');
+            this.dateUpdatedLabel = this.localizationService.value('locale.clientTracker:dateUpdated');
+            this.machineNameLabel = this.localizationService.value('locale.clientTracker:machineName');
+            this.versionLabel = this.localizationService.value('locale.clientTracker:version');
+            this.searchLabel = this.localizationService.value('locale.clientTracker:search');
+            this.clearLabel = this.localizationService.value('locale.clientTracker:clear');
+            this.refreshLabel = this.localizationService.value('locale.clientTracker:refresh');
+            this.ipAddressLabel = this.localizationService.value('locale.clientTracker:ipAddress');
+            this.noMatchesLabel = this.localizationService.value('locale.clientTracker:noMatches');
+            this.noRecordsLabel = this.localizationService.value('locale.clientTracker:noRecords');
+            
+            if (!moment(this.filterDate, KomodoConfiguration.dateFormat).isValid()) {
+               this.filterDate = moment(this.filterDate).format(KomodoConfiguration.dateFormat);
+            }
+        },
+        filterListHandler: function () {
+            this.eventAggregator.publish("filterList", { machineName: this.filterMachineName, dateUpdated: this.filterDate, version: this.filterVersion });
+        },
+        clearFiltersHandler: function () {
+            this.filterDate = undefined;
+            this.filterMachineName = undefined;
+            this.filterVersion = undefined;
+            this.eventAggregator.publish("filterList", { machineName: this.filterMachineName, dateUpdated: this.filterDate, version: this.filterVersion });
+        },
+        refreshHandler: function () {
+            this.filterDate = undefined;
+            this.filterMachineName = undefined;
+            this.filterVersion = undefined;
+            this.eventAggregator.publish("filterList", { machineName: this.filterMachineName, dateUpdated: this.filterDate, version: this.filterVersion });
+        }
+    });
+
+   
+</script>
+
+

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="18.8" viewBox="0 0 70 18.8">
+  <defs>
+    <style>
+      .a {
+        fill: #22313f;
+      }
+
+      .b {
+        fill: #919191;
+        opacity: 0.25;
+      }
+
+      .c {
+        fill: #0075b1;
+      }
+    </style>
+  </defs>
+  <title>device</title>
+  <rect class="a" x="37.3" y="2.1" width="29.8" height="14.75"/>
+  <rect class="a" x="3.8" y="2.1" width="29.8" height="14.75"/>
+  <g>
+    <path class="b" d="M70,44.4V25.6S58.6,42.9,31.7,44.4" transform="translate(0 -25.6)"/>
+    <path class="c" d="M0,25.7V44.4H70V25.7ZM30.6,41.3H6.1a1,1,0,1,1,0-2.1H30.6a1,1,0,0,1,0,2.1Zm36.4-.2H38.9l6.1-13H67.1Z" transform="translate(0 -25.6)"/>
+  </g>
+</svg>

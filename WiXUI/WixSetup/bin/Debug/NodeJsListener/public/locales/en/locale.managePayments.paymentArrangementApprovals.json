@@ -1,0 +1,71 @@
+{
+    "useCaseTitle": "Payment Arrangement Approvals",
+    "listOfPaymentArrangements": "List of Payment Arrangements",
+    "filterListOfPaymentArrangements": "Filter List of Payment Arrangements by",
+    "startDate": "From Date",
+    "endDate": "To Date",
+    "awaitingApproval": "Awaiting Approval",
+    "all": "All",
+    "tableOfPaymentArrangements": {
+        "type": "Type",
+        "dateCreated": "Date Created",
+        "requestedBy": "Requested By",
+        "customerNumber": "Customer Number",
+        "requestStatus": "Request Status",
+        "paymentArrangementTotal": "Payment Arrangement Total",
+        "unpaidBalance": "Unpaid Balance",
+        "actions": "Actions",
+        "review": "Review",
+        "view": "View"
+    },
+    "approvePaymentArrangement": {
+        "approvePaymentArrangement": "Approve Payment Arrangement",
+        "dateCreated": "Date Created",
+        "requestedBy": "Requested By",
+        "customerNumber": "Customer Number",
+        "requestStatus": "Request Status",
+        "paymentArrangementTotal": "Payment Arrangement Total",
+        "numberOfInstalments": "Number of Instalments",
+        "comment": "Comment",
+        "approve": "Approve",
+        "reject": "Reject",
+        "type": "Type",
+        "unpaidBalance": "Unpaid Balance"
+    },
+     "viewPaymentArrangement": {
+        "viewPaymentArrangement": "View Payment Arrangement Details",
+        "dateCreated": "Date Created",
+        "requestedBy": "Requested By",
+        "customerNumber": "Customer Number",
+        "requestStatus": "Request Status",
+        "paymentArrangementTotal": "Payment Arrangement Total",
+        "numberOfInstalments": "Number of Instalments",
+        "comment": "Comments",
+        "reviewDetails": "Review Details",
+        "type": "Type",
+        "reviewedBy": "Reviewed By",
+        "reviewOutcome": "Review Outcome",
+        "unpaidBalance": "Unpaid Balance"
+    },
+    "messages": {
+        "genericDeliveryFailureMessage": "There was an error submitting the message.",
+        "genericMessageReceived": "Message Received",
+        "genericFaultMessage": "There was a fault with the message.",
+        "successfulMessage": "Payment details were successfully updated.",
+        "technicalErrorMessage": "There was a technical error, please contact the system administrator.",
+        "cannotLoadData": "We could not load any Payment Arrangements, please try again later.",
+		"InvalidApprover": "Requestor and approver cannot be the same",
+		"InvalidUser": "User not present in CRM. Please contact the system administrator."
+    },
+    "processShortNames": {
+        "CreateInvoiceInstalmentPlan": "Create",
+        "AmendInvoiceInstalmentPlan": "Amend"
+    },
+    "reviewOutcomes": {
+        "AmendApproved": "Edit Approved",
+        "AmendRejected": "Edit Rejected",
+        "CreateApproved": "Create Approved",
+        "CreateRejected": "Create Rejected",
+        "null":  "-"
+    }
+}

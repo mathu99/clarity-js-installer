@@ -1,0 +1,71 @@
+{
+  "useCaseTitle": "Aprovações de Acordos de Pagamento",
+  "listOfPaymentArrangements": "Lista de Acordos de Pagamento",
+  "filterListOfPaymentArrangements": "Filtrar Lista de Acordos de Pagamento por",
+  "startDate": "Data De",
+  "endDate": "Data Até",
+  "awaitingApproval": "A aguardar Aprovação",
+  "all": "Todos",
+  "tableOfPaymentArrangements": {
+    "type": "Tipo",
+    "dateCreated": "Data Criada",
+    "requestedBy": "Solicitado Por",
+    "customerNumber": "Número de Cliente",
+    "requestStatus": "Estado de Pedido",
+    "paymentArrangementTotal": "Acordo de Pagamento Total",
+    "unpaidBalance": "Saldo Não Pago",
+    "actions": "Acções",
+    "review": "Rever",
+    "view": "Ver"
+  },
+  "approvePaymentArrangement": {
+    "approvePaymentArrangement": "Aprovar Acordo de Pagamento",
+    "dateCreated": "Data Criada",
+    "requestedBy": "Solicitado Por",
+    "customerNumber": "Número de Cliente",
+    "requestStatus": "Estado de Pedido",
+    "paymentArrangementTotal": "Acordo de Pagamento Total",
+    "numberOfInstalments": "Número de Prestações",
+    "comment": "Comentários",
+    "approve": "Aprovar",
+    "reject": "Rejeitar",
+    "type": "Tipo",
+    "unpaidBalance": "Saldo Não Pago"
+  },
+  "viewPaymentArrangement": {
+    "viewPaymentArrangement": "Ver Dados de Acordo de Pagamento",
+    "dateCreated": "Data Criada",
+    "requestedBy": "Solicitado Por",
+    "customerNumber": "Número de Cliente",
+    "requestStatus": "Estado de Pedido",
+    "paymentArrangementTotal": "Acordo de Pagamento Total",
+    "numberOfInstalments": "Número de Prestações",
+    "comment": "Comentários",
+    "reviewDetails": "Rever Dados",
+    "type": "Tipo",
+    "reviewedBy": "Revisto Por",
+    "reviewOutcome": "Rever Resultado",
+    "unpaidBalance": "Saldo Não Pago"
+  },
+  "messages": {
+    "genericDeliveryFailureMessage": "Ocorreu um erro ao submeter a mensagem.",
+    "genericMessageReceived": "Mensagem Recebida",
+    "genericFaultMessage": "Houve uma falha com a mensagem.",
+    "successfulMessage": "Os dados de pagamento foram actualizados com êxito.",
+    "technicalErrorMessage": "Houve um erro técnico, por favor, contactar o administrador do sistema.",
+    "cannotLoadData": "Não conseguimos carregar quaisquer Acordos de Pagamento, por favor, tente mais tarde.",
+    "InvalidApprover": "O solicitador e o parovador não podem ser o mesmo",
+    "InvalidUser": "Utilizador não presente em CRM. Por favor, contactar o administrador do sistema."
+  },
+  "processShortNames": {
+    "CreateInvoiceInstalmentPlan": "Criar",
+    "AmendInvoiceInstalmentPlan": "Alterar"
+  },
+  "reviewOutcomes": {
+    "AmendApproved": "Editar Aprovado",
+    "AmendRejected": "Editar Rejeitado",
+    "CreateApproved": "Criar Aprovado",
+    "CreateRejected": "Criar Rejeitado",
+    "null": "-"
+  }
+}

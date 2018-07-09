@@ -1,0 +1,46 @@
+<script>
+    InfrastructureServicesBehavior = {
+        get cachedDataService() {
+            return Komodo.Services.cachedDataService;
+        },
+        get communicationService() {
+            return Komodo.Services.communicationService;
+        },
+        get configuration() {
+            return Infrastructure.Core.Configuration;
+        },
+        get country() {
+            return Komodo.Services.uiService.getController('application').get('_selectedCountryId');
+        },
+        get eventAggregator() {
+            return Komodo.Services.eventAggregator;
+        },
+        get featureToggleService() {
+            return Komodo.Services.featureToggleService;
+        },
+        get localizationService() {
+            return Komodo.Services.localizationService;
+        },
+        get logger() {
+            return Infrastructure.Core.Logger;
+        },
+        get offlineService() {
+            return Komodo.Services.offlineService;
+        },
+        get securityService() {
+            return Komodo.Services.securityService;
+        },
+        get systemService() {
+            return Komodo.Services.systemService;
+        },
+        get uiService() {
+            return Komodo.Services.uiService;
+        },
+        get traceService() {
+            return Komodo.Services.traceService;
+        },
+        get validationService() {
+            return Komodo.Services.validationService;
+        }
+    };
+</script>

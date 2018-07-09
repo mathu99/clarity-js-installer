@@ -1,0 +1,167 @@
+{
+  "general": {
+    "title":"Customer Information",
+    "back":"BACK",
+    "edit":"Edit",
+    "permissionDeniedMsg": "Your role does not have permission to assist #customertype# customers.",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "personalInformationTab": {
+    "title":"Customer Information",
+    "languagePreference": "Language Preference",
+    "title_1": "Title",
+    "firstName": "First Name",
+    "lastName":"Last Name",
+    "surName":"Surname",
+    "identificationType":"Identification Type",
+    "identificationNumber":"Identification Number",
+    "dueDate":"Due Date",
+    "balanceDue":"Balance Due",
+    "viewingPlatform": "Viewing Platform",
+    "customerType":"Customer Type",
+    "locationIndicator": "Location Indicator",
+    "position": "Position",
+    "customerNo": "Customer Number",
+    "employmentType":"Type of Employment",
+    "businessName": "Business Name",
+    "department": "Department",
+    "employeeNo":"Employee Number",
+    "companyName": "Company Name",
+    "demoType": "Demo Type",
+    "companyRegNo":"Company Registration Number",
+    "sponsor": "Sponsor",
+    "benefitEndDate": "Benefit End Date",
+
+    "specialistTitle":"Specialist - Manage Customer",
+    "phoneNum":"Phone Number",
+    "postalAddress":"Postal Address",
+    "emailId":"Email Address",
+    "residenceType":"Residence Type",
+    "physicalAddress":"Physical Address",
+    "customerNumber":"Customer Number",
+    "homeEquipment" : "Home Equipment",
+    "customerName":"Customer Name"
+
+  },
+
+  "authorizeCustomerInfo": {
+    "title":"Verify Customer",
+
+    "customerInformationTitle":"Customer Information",
+    "languagePreference": "Language Preference",
+    "firstName": "First Name",
+    "title_1": "Title",
+    "lastName":"Last Name",
+    "surName":"Surname",
+    "identificationType":"Identification Type",
+    "identificationNumber":"Identification Number",
+
+    "contactInformationTitle":"Contact Information",
+    "phoneNumberTableTitle":"Phone Numbers",
+    "pType":"Type",
+    "pNumber":"Number",
+    "pPrimary":"Primary",
+
+    "emailAddressesTableTitle":"Email Addresses",
+    "eAddress":"Address",
+    "ePrimary":"Primary",
+
+    "addressInformationTitle":"Address Information",
+    "aType":"Type",
+    "aAddress":"Address",
+    "aPrimary":"Primary",
+
+    "householdInformationTitle":"Household Member and Authority Delegation Information",
+    "hName":"Name",
+    "hIdNumber":"Identification Number",
+    "hRelation":"Relation",
+    "hHouseholdMember":"Household Member",
+    "hAllowToTransact":"Allowed to Transact",
+    "personContacted" :"Person making contact",
+    "personContactedError":"Please select / enter person making contact then click on Customer Verified.",
+    "personContactedErrorAF":"Please select person making contact then click on Customer Verified.",
+    "personContactedLength" : "Person making contact cannot exceed 61 characters.",
+    "authorised": "Customer Verified",
+    "notAuthorised":"Customer Not Verified"
+  },
+
+
+  "packageInfo":{
+    "deviceNum":"Smartcard/Device Number",
+    "device":"Device",
+    "principalPkg":"Principal Package",
+    "principalStatus":"Principal Status",
+    "addonPkg":"Addon Package",
+    "addonStatus":"Addon Status",
+    "services":"Services",
+    "insurance":"Insurance"
+  },
+
+  "contactInformationTab": {
+    "title":"Contact Information",
+    "type": "Type",
+    "details": "Details",
+    "primary": "Primary",
+    "socialMedia":"Social Media",
+    "communicationMethod":"Communication Method",
+    "marketingInformation":"Receives Marketing Information",
+    "receivesMagazine":"Receives Magazine",
+    "address":"Address",
+    "number":"Number",
+    "phoneNumberTableTitle":"Phone Numbers",
+    "emailAddressesTableTitle":"Email Addresses",
+    "boxOfficeContactNumber":"Box Office Phone Numbers"
+  },
+
+  "addressInformationTab": {
+    "title":"Address Information",
+    "type": "Type",
+    "details": "Address",
+    "primary": "Primary",
+    "exactLocation":"Exact Location",
+    "floor":"Floor"
+  },
+
+  "houseHoldInformationTab": {
+    "title":"Household Member and Authority Delegation Information",
+    "name":"Name",
+    "identificationNum": "Identification Number",
+    "relation": "Relation",
+    "birthDate":"Date of Birth",
+    "householdMember": "Household Member",
+    "allowedToTransact":"Allowed to Transact",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "role":"Role",
+    "identityDetailType": "Identification Type",
+    "authorityDelegation":"Contact Person/ Authority to delegate information",
+    "authorityDelegationTitle":"Authority Delegation",
+    "authorityDelegationTitle1":"Authority Delegation Information",
+    "householdMemberTitle":"Householdmember/ Authority Delegation",
+    "relationship":"Relationship"
+  },
+
+  "verifyCustomerPopup": {
+    "title" : "Verify Customer",
+    "authorizeCustomer" : "Customer Verified",
+    "notAuthorizeCustomer" : "Customer Not Verified",
+    "emailAddressesTableTitle":"Email Addresses",
+    "phoneNumberTableTitle":"Phone Numbers",
+    "personContacted" :"Person making contact",
+    "personContactedError":"Please select / enter person making contact then click on Customer Verified.",
+    "personContactedErrorAF":"Please select person making contact then click on Customer Verified.",
+    "empty":" ",
+    "personContactedLength" : "Person making contact cannot exceed 61 characters."
+  },
+
+  "serviceProviderInformationTab": {
+    "title": "Service Provider Information",
+    "installationType": "Installation Type",
+    "serviceProvider": "Service Provider",
+    "serviceProviderNumber": "Service Provider Number",
+    "serviceProviderEmail": "Service Provider Email",
+    "isActive": "Is Active",
+    "networkName": "Network Name",
+    "establishmentType": "Establishment Type"}
+}

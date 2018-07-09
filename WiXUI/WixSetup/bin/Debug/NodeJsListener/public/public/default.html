@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--APP DYMANICS TESTING-->
+    <script type="text/javascript">
+        window['adrum-start-time'] = new Date().getTime();
+        (function (config) {          
+            config.adrumExtUrlHttp = 'Scripts/Libs/AppDynamics';
+            config.adrumExtUrlHttps = 'Scripts/Libs/AppDynamics';
+            config.beaconUrlHttp = 'https://rum.multichoice.co.za';
+            config.beaconUrlHttps = 'https://rum.multichoice.co.za';
+            config.xd = { enable: false };
+        })(window['adrum-config'] || (window['adrum-config'] = {}));
+        if ('https:' === document.location.protocol) {
+            document.write(unescape('%3Cscript')
+         + " src='Scripts/Libs/AppDynamics/adrum-4.3.5.0.js' "
+         + " type='text/javascript' charset='UTF-8'"
+         + unescape('%3E%3C/script%3E'));
+        } else {
+            document.write(unescape('%3Cscript')
+         + " src='Scripts/Libs/AppDynamics/adrum-4.3.5.0.js' "
+         + " type='text/javascript' charset='UTF-8'"
+         + unescape('%3E%3C/script%3E'));
+        }
+    </script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cache-control" content="max-age=0">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 11:00:00 GMT">
+    <meta http-equiv="pragma" content="no-cache">
+    <title>Clarity</title>
+    <link rel="shortcut icon" href="Content/Images/favicon.ico">
+    <link href='Content/bootstrap.css' rel='stylesheet' type='text/css' />
+    <link href='Content/bootstrap-responsive.css' rel='stylesheet' type='text/css' />
+    <link href='Content/datepicker.css' rel='stylesheet' type='text/css' />
+    <link href='Content/locale.css' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" type="text/css" href="Content/komodo-default.css" id="theme" />
+    <script src="Scripts/Libs/Polymer/webcomponents-lite.js"></script>
+    <link href="Scripts/Libs/Polymer/polymer-micro.html" rel="import" />
+    <link href="Scripts/Libs/Polymer/polymer-mini.html" rel="import" />
+    <link href="Scripts/Libs/Polymer/polymer.html" rel="import" />
+</head>
+
+<body>
+    <div class="loader">
+    </div>
+    <div class="page">
+        <script type="text/x-handlebars" data-template-name="application">
+            <nav class="menu-container navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <span {{bind-attr class=':menu-toggle view.context.isHomePage:komodo-hidden' }}>
+                            {{#view Komodo.Controls.Button action="toggleMenu" class="visible-xs visible-sm"}}
+                            {{loc shell.menu}}
+                            {{/view}}
+                        </span>
+                        <button type="button" class="navbar-toggle" size="sm" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button> {{#if workingOnlineAuthenticated}}
+                        <div class="left-side-of-the-header">
+                            <a href="#/home" class="komodo-left" {{action "navigateHome"}}><img src="Content/Images/home-icon.svg" id="homebutton" {{bind-attr class='view.context.isHomePage:komodo-hidden' }} /></a>
+                            <img class="komodo-left" id="ClarityLogoPositon" src="Content/Images/Home/clarityApp.png" />
+                            <div class="country komodo-left">
+                                <img {{bind-attr src="loggedInFlag" }} /> {{#view}}
+                                <div class="showCountryName">{{loggedInCountry}}</div>
+                                {{/view}}
+                            </div>
+
+                            <a {{action toggleSideNav}} class="toggle-sidenav komodo-left">
+                                <div id="icon-toggle" {{bind-attr class='view.context.isHomePage:komodo-hidden' }}></div>
+                            </a>
+                        </div>
+                        {{outlet customerIndicator}} {{/if}}
+                    </div>
+
+                    <div class="navbar-collapse collapse">
+                        <div class="nav navbar-right komodo-settings-dropdown" id="first">
+                            <a class="settings-btn" {{action settingsDropDown}}><img src="Content/Images/settings_icon.svg" class="komodo-settings-dropdown" id="settingsImage" /></a>
+                        </div>
+                        <div class="komodo-current-user">
+                            {{loggedInUserName}} {{#if userRolesMismatched}}
+                            <div class="label label-access komodo-access-warning" {{action "showUserAccessWarning"}}>
+                                <div class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></div>
+                                {{loc shell.rolesMismatch}}
+                            </div>{{/if}}
+                        </div>
+                        <div class="nav navbar-right komodo-debug">
+                            <span id="failure-messages-icon" {{bind-attr class=':komodo-showpop shouldShowFailedMessages::komodo-hidden' }}>
+                                <a {{action showFailedMessages}} class="komodo-showpoplink"><img src="Content/Images/message-failure.svg" /><span class="komodo-message-failure-count">{{failedMessagesCount}}</span></a>
+                            </span>
+                        </div>
+                        <div class="komodo-settings-dropdown" id="komodo-settings-dropdown">
+                            <div class="settings-nav">
+                                <label>{{loc shell.changeLanguage}}</label>
+                                <br /> {{view Komodo.Application.LocalizationChangerView confirmationRequired="true"}}
+                            </div>
+                            <div class="settings-nav">
+                                {{view Komodo.Application.ThemeSwitcherView}}
+                            </div>
+                            <div class="settings-nav">
+                                {{#if canGoOffline}} {{#view }}
+                                <a class="settings-nav" {{action workOffline}}>{{loc shell.workOffline}}</a> {{/view}} {{/if}}
+                                {{#if workingOffline}} {{#view }}
+                                <div class="settings-nav"><a {{action workOnline}}>{{loc shell.workOnline}}</a></div>
+                                {{/view}} {{/if}}
+                            </div>
+                            <div class="settings-nav-logout settings-nav">
+                                {{#if workingOnlineAuthenticated}} {{#view }}
+                                <a {{action logout}}>{{loc shell.logout}}</a> {{/view}} {{/if}}
+                            </div>
+                            {{#if Komodo.DEBUG}}
+                            <hr />
+                            <div class="settings-nav">
+                                {{view Komodo.Controls.Checkbox valueBinding="KomodoConfiguration.overrideEmber" appearance="switch" label="New Functionality"}}
+                            </div>
+                            {{/if}}
+                            <hr />
+                            <div>
+                                <label class="version">{{loc shell.version}}</label><br />
+                                <span class="version-number">{{version}}</span><br />
+                            </div>
+                            <div class="m-logo"></div>
+                        </div>
+                        {{#if workingOnlineAuthenticated}}
+                        <span class="nav navbar-right komodo-search-field">
+                            {{#view Komodo.Controls.FormView action="search"}}{{view Komodo.Controls.CoreTextField id="searchfield" valueBinding="Komodo.Services.uiService.applicationController.searchText"}}
+                            {{view Komodo.Controls.SplitButton title="~locale.komodo:shell.search~" action="search" linksBinding="searchButtonLinks"}}{{/view}}
+                        </span>
+
+                        <span class="nav navbar-right komodo-recent-customers" id="second">
+                            <a {{action showRecentCustomers}}><img src="Content/Images/recent-customers-icon.svg" id="recentCustomersButton" /></a>
+                        </span>
+                        <span class="nav navbar-right komodo-clear-errors">
+                            {{outlet clearErrors}}
+                        </span> {{/if}}
+                    </div>
+                </div>
+            </nav>
+            {{outlet recentCustomers}}
+            <div class="container-fluid">
+                <div class="row row-offcanvas row-offcanvas-left">
+                    <div {{bind-attr class=":col-sm-0 :sidebar-offcanvas view.context.isHomePage:komodo-hidden view.context.isHomePage:col-md-0:col-md-3" }} id="sidebar" role="navigation">
+                        <div class="komodo-sitesearch-container">
+                            <a class="komodo-left" {{action showSiteSearchTextField}}><img src="Content/Images/site-search-icon.svg" id="sitesearchbutton" /></a>
+                            <span class="komodo-left">
+                                {{view Komodo.Controls.CoreTextField id="sitesearchtext" valueBinding="Komodo.Services.uiService.applicationController.siteSearchText" placeholder="Ctrl+Q Site Search"}}
+                            </span> {{outlet siteSearch}}
+                        </div>
+                        {{outlet quicklinks}}
+                    </div>
+                    <div {{bind-attr class=":col-sm-12 :main view.context.isHomePage:col-md-12:col-md-9" }} id="main">
+                        {{outlet summaryDetails}} {{outlet busy}}
+                        <br />
+                        <div class="bg-primary komodo-hidden" id="service-update-notification">
+                            {{loc shell.serviceUpdate}}
+                        </div>
+                        <br /> {{#if isMobileDevice}}<span></span>{{else}}
+                        <div class="bg-warning komodo-hidden" id="main-notification">{{loc shell.oldVersion}} {{loc shell.reopenBrowser}}</div>{{/if}}
+                        <div>
+                            {{outlet IvrPushNotification}}
+                        </div>
+                        {{outlet}}
+
+                    </div>
+                </div>
+            </div>
+            {{outlet debug}}
+        </script>
+    </div>
+    <script src="config.js"></script>
+    <!-- inject:js -->
+    <script src="komodo.min.js?20180510071704873"></script>
+    <!-- endinject -->
+    <link href="Components/components.html" rel="import" />
+</body>
+
+</html>

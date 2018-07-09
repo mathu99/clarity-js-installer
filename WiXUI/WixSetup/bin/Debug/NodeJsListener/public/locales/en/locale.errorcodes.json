@@ -1,0 +1,19 @@
+{
+  "errorCodes": {
+    "smartCardRequired": "Smartcard/Device Number",
+    "enterSmartCardNumber": "Please enter Smartcard/Device Number.",
+    "errorCodeRequired": "Clear Error Code",
+    "selectErrorCode": "Please select Error Code.",
+    "errorCodeCleared": "Error Code Cleared",
+    "successfullyErrorCodeCleared": " has been successfully cleared from smartcard/device ",
+    "minDigitsmartCardRequired": "Please enter Smartcard/Device Number between 7 to 10 characters.",
+    "retryMessage": "The command was already sent to __smartcarddevicenumber__, at __CommandDateTime__, please try after sometime.",
+    "successMessage": "The error code",
+    "failureMessageTitle": "Technical Error",
+    "deliveryFailureTitle": "EventFailure",
+    "deliveryFailureMessage": "ClearDeviceErrorCode delivery failure.",
+    "errorCodeFault": "ErrorCodeFault",
+    "errorCodeFaultMessage": "ClearDeviceErrorCode error code fault.",
+    "placeholder": "Smartcard / Device Number"
+  }
+}

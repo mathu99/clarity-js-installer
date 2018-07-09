@@ -1,0 +1,42 @@
+{	
+	"addDevicesAndPackages": {
+		"useCaseTitle": "Commercial - Add Devices and Packages",
+		"back":"BACK",
+		"addButton": "Add",
+		"selectAddOnButton": "Select Add-On",
+		"activateButton": "Activate",
+		"clearAllButton": "Clear All"
+	},
+	"addDevice": {
+		"adTitle": "Add Devices",
+		"agreementType": "Agreement Type",
+		"locationInEstablishment": "Where in the establishment do you want to view the content?",
+		"numberViewpoints": "How many viewing points do you have?",
+		"smartcardDeviceNumber": "Smartcard or Device Number",
+		"deviceDescription": "Device Description",
+		"messgTitleLinkProducts" : "Add Device",
+		"messgDecSCNoValidatin" : "Please provide a valid Decoder/Smartcard number",
+		"messgTitleDeviceInfoToGrid" : "Link Products",
+		"messgDeviceInfoToGrid" : "Please add a decoder to link the selected Packages to",
+		"messgActivationDate" : "Please provide an activation date.",
+		"messgHardwareValidation" : "Please provide a valid Decoder/Smartcard number",
+		"messgCustomerNoValidation" : "Please provide a valid Customer Number to link product(s)",
+		"messgProductToLinkvalidation" : "Please select products to link.",		
+		"messgTitleSearchDevice" :"Seach Device",
+		"messgDeviceNo" : "Device No: ",
+		"messgDeviceNoValidation" : "  has already been selected for linking, please try another",
+		"messgProductLinkSucess" : "<strong>Products have been linked successfully!.<br />For customer: </strong><br />",
+		"messgProductLinkFail" : "Oops…we have encountered a problem while processing your request. But we guarantee it will complete successfully"
+	},
+	"activatePackages": {
+		"apTitle": "Activate Packages",
+		
+		"principlePackage": "Principal Package",
+		"addOnPackages": "Add On Channels",
+		"activationDate": "Activation Date",
+		"insurance": "Insurance"		
+	},
+	"activationSummary": {
+		"asTitle": "Activation Summary"
+	}		
+}

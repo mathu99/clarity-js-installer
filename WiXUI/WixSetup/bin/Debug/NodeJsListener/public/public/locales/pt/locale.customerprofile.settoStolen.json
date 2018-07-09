@@ -1,0 +1,21 @@
+{	
+	"settostolen": {
+		"title": "Definir Para Roubado",	
+		"tabdevices": "Dispositivos",
+		"deviceNumber": "Número de Dispositivo",
+		"deviceName": "Nome de Dispositivo",
+		"product": "Produto",
+		"deviceStatus": "Estado de Dispositivo",
+		"linkedSC": "Cartão da MultiChoice Associado",
+		"LinkedSCModel": "Modelo de Cartão da MultiChoice",
+		"InsuranceStatus": "Estado do Seguro",
+		"SCProduct": "Produto de Cartão da MultiChoice",
+		"typeCaseNumber": "Escreva o Número de Caso aqui",
+		"typePoliceStation": "Escreva o nome de Esquadra da Polícia aqui",
+	  "typeClaimNr": "Escreva o Número de Queixa aqui",
+		"FromProductName": "Produto",
+		"FromModel": "Modelo",
+		"SetToStolen": "Definir para Roubado",
+		"item": "Item"
+	}
+}

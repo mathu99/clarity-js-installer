@@ -1,0 +1,22 @@
+{
+	
+	"settostolen": {
+		"title": "Set To Stolen",	
+		"tabdevices": "Devices",
+		"deviceNumber": "Device Number",
+		"deviceName": "Device Name",
+		"product": "Product",
+		"deviceStatus": "Device Status",
+		"linkedSC": "Linked Smartcard",
+		"LinkedSCModel": "Smartcard Model",
+		"InsuranceStatus": "Insurance Status",
+		"SCProduct": "Smartcard Product",
+		"typeCaseNumber": "Type Case Number here",
+		"typePoliceStation": "Type Police Station name here",
+	    "typeClaimNr": "Type Claim Number here",
+		"FromProductName": "Product",
+		"FromModel": "Model",
+		"SetToStolen": "Set To Stolen",
+		"item": "Item"
+	}
+}

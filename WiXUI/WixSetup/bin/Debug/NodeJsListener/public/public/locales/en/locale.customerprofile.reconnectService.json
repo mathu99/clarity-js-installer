@@ -1,0 +1,36 @@
+{
+	
+	"hardwareandservices": {
+		"scheduledate": "$t(locale.customerprofile.disconnectservice:hardwareandservices.scheduledate)",
+		"reconnectreason": "Reconnect Reason:",
+		"continue":"$t(locale.customerprofile.disconnectservice:hardwareandservices.continue)",
+		"resonselect":"$t(locale.customerprofile.disconnectservice:hardwareandservices.resonselect)",
+		"monthselect":"$t(locale.customerprofile.disconnectservice:hardwareandservices.monthselect)",
+		"reconnecttext":"Reconnect",
+		"submit":"$t(locale.customerprofile.disconnectservice:hardwareandservices.submit)",
+		"cancel":"$t(locale.customerprofile.disconnectservice:hardwareandservices.cancel)",
+		"note":"$t(locale.customerprofile.disconnectservice:hardwareandservices.note)",
+		"selectvalidreason":"$t(locale.customerprofile.disconnectservice:hardwareandservices.selectvalidreason)",
+		"customernotexist":"$t(locale.customerprofile.disconnectservice:hardwareandservices.customernotexist)",
+		"customernotfound":"$t(locale.customerprofile.disconnectservice:hardwareandservices.customernotfound)",
+		"reconnectmessage":" __servicename__  has been scheduled on  __schedDate__  for reconnection. ",
+		"schedulereconnectmessage":" has been scheduled on  __recConnectDate__  for reconnection. ",
+		"techerror":"$t(locale.customerprofile.disconnectservice:hardwareandservices.techerror)",
+		"problemoccurred":"Problem has occurred while reconnecting service ",
+		"crmerrormessage":"$t(locale.customerprofile.disconnectservice:hardwareandservices.crmerrormessage)",
+		"recschedconfmessage":"__servicename__  has been scheduled on  __recDate__  for reconnection.",
+		"recconfmessage":"__servicename__  has been reconnected successfully.",
+		"schednotetext":"__prnserviceName__ has been scheduled to be Reconnected on  __recscheddate__ .",
+		"notetext":" __prnserviceName__ has been Reconnected Successfully.",
+		"noteschedaddontext":" __addonservice__  has  been scheduled to be Reconnected on  __addonscheddate__ .",
+		"noteaddontext":"__addonservice__ has  been scheduled to be Reconnected Successfully.",
+		"recerrormessage1":"Please select any service to reconnect",
+		"recerrormessage2":"Reconnect date for principal service should not be older than today.",
+		"recerrormessage3":"Reconnect date for add on service should not be older than today.",
+		"recerrormessage4":"Reconnection date of addon must be later than reconnection date of principal service.",
+		"recerrormessage5": "Please select principal service first to reconnect",
+		"recerrormessage6": "Please select any addon service  to reconnect",
+		"noServicesToReconnect": "No products to reconnect."
+
+	}
+}

@@ -1,0 +1,20 @@
+{
+  "home": {
+    "title": "Amostras",
+    "description": "Uma coleção de amostras que demonstra várias opções de implementação."
+  },
+  "customer": {
+    "useCaseTitle": "Amostra de cliente",
+    "saveDetails": "Salvar Detalhes",
+    "editDetails": "Editar Detalhes"
+  },
+  "personalDetails": {
+    "title": "Título",
+    "firstName": "Primeiro nome",
+    "lastName": "Último nome",
+    "email": "O email",
+    "telNo": "Número de telefone",
+    "customerNo": "Número do cliente",
+    "idNo": "Número de identidade"
+  }
+}

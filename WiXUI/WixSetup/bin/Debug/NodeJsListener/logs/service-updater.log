@@ -1,0 +1,2 @@
+{"name":"service-updater","hostname":"DESKTOP-065CJ1P","pid":12376,"level":50,"msg":"could not download resource :: http://03RNBC-CGWH9H2:51801/UpdateFiles/deploymentmanifest.json status code :: 404","time":"2018-06-01T07:38:54.955Z","v":0}
+{"name":"service-updater","hostname":"DESKTOP-065CJ1P","pid":10264,"level":50,"msg":"Error: getaddrinfo ENOTFOUND 03rnbc-cgwh9h2, could not connect to url : [http://03RNBC-CGWH9H2:51801/UpdateFiles/deploymentmanifest.json]","time":"2018-06-01T09:46:35.768Z","v":0}

@@ -1,0 +1,88 @@
+{
+	"processType": "Tipo",
+	"processStatus": "Estado",
+	"statusDate": "Data de Estado",
+	"status": "Estado de Movimento",
+	"exception": "Erro",
+	"waybillReference": "Referência Waybill",
+	"deviceSerialNumber": "Número de Série de Dispositivo",
+	"createdByUserName": "Criado por Utilizador",
+	"deviceSerialNumbers": "Números de Série de Dispositivo",
+	"deviceName": "Nome de Dispositivo",
+	"sentFrom": "Enviado De",
+	"to": "Para",
+  "receivedAt": "Recebido em",
+  "materialDocument": "Documento de Material",
+	"quantity": "Quantidade",
+	"dateCreated": "Data Criada",
+	"hardwareLocation": "Localização",
+	"delete": "- Eliminar",
+	"add": "+ Adicionar",
+	"statusDescription": "Descrição de Estado",
+  "failureMessage": "Falha de Mensagem",
+  "deviceStatus": "Estado de Dispositivo",
+	"stockMovementTransactions": {
+	"stockMovementTransactionsHeading": "Transacções de Movimento de Stock",
+	"stockMovementTransactionsSubHeading": "Lista de Transacções de Movimento de Stock",
+	"stockMovementTransactionsFilter": "Filtrar Lista de Transacções de Movimento de Stock por:",
+	"startDate": "Data Inicial",
+	"endDate": "Data Final",
+	"view": "Ver",
+	"edit": "Editar",
+	"search": "Pesquisar",
+	"clear": "Eliminar"
+	},
+	"transactionList": {
+	"actions": "Acções"
+	},
+	"viewStockTransaction": {
+	"viewStockTransactionHeading": "Ver Transacção de Stock",
+	"viewStockTransactionSubHeading": "Informação de Transacção de Stock"
+	},
+	"editStockTransaction": {
+	"editStockTransactionHeading": "Editar Transacção de Stock",
+	"editStockTransactionSubHeading": "Informação de Transacção de Stock",
+	"editDeviceSerialNumbersSubHeading": "Editar Números de Série de Dispositivo",
+	"resubmit": "Resubmeter",
+	"cancelTransaction": "Cancelar Transacção",
+	"cancelChanges": "Cancelar Alterações"
+	},
+	"processTypeNames": {
+		"All": "Todos",
+		"Issue": "Enviar",
+		"Receive": "Receber"
+	},
+  "processStatusNames": {
+    "All": "Todos",
+    "Cancelled": "Cancelado",
+    "Completed": "Completado",
+    "Failed": "Falhado",
+    "Resubmitted": "Resubmeter",
+    "Submitted": "Começado",
+    "Validating": "Validar",
+    "ValidationError": "Erro de Validação"
+  },
+	"failureStatusNames": {
+		"Ok": "Ok",
+		"Exception": "Isenção",
+		"InvalidMessage": "Mensagem recebida inválida. Por favor, editar os dados e resubmeter a transacção."
+	},
+	"serialNumberStatusNames": {
+		"InvalidHardwareModel": "Modelo de hardware inválido.",
+    "AlreadyAtDestination": "Já no destino.",
+    "InvalidHardwareLocationFrom": "Localização de hardware inválida.",
+    "InExistingProcess": "O número de série já está presente num processo existente.",
+    "Duplicate": "Este número de série já foi adicionado ao processo.  Necessita de removê-lo/editá-lo.",
+    "NotIssuedForDestination": "O stock não foi enviado para a sua localização.",
+    "Exception": "Erro",
+		"Ok": "Ok"
+	},
+  "messages": {
+    "processFetchAllException": "Não foi possível recuperar os processos solicitados.  Por favor, tente novamente.",
+    "fetchProcessException": "Não foi possível recuperar os dados do processo solicitado.  Por favor, tente novamente.",
+    "canonicalError": "Não foi possível recuperar dados com nome __dataset__.",
+    "cancellationHeading": "Cancelar Transacção",
+    "cancellationMessage": "Vai cancelar esta transacção.  Tem a certeza que pretende continuar?",
+    "resubmitted": "O pedido de movimento de stock foi resubmetido."
+  }
+}

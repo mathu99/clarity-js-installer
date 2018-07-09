@@ -1,0 +1,130 @@
+{
+    "issueStock": {
+        "issueStockHeading": "Issue Stock",
+        "issueStockSubHeading": "Issue Stock to Repair Centres or Decoder Centres",
+        "sendFrom": "Send From",
+        "to": "To",
+        "issueStock": "Issue Stock"
+    },
+	"receiveStock": {
+		"receiveStockHeading": "Receive Stock",
+		"receiveStockSubHeading": "Receive Stock at Repair Centres or Decoder Centres",
+		"sentFrom": "Sent From",
+		"receivedAt": "Received At",
+		"deviceStatus": "Device Status",
+		"receiveStock": "Receive Stock"
+	},
+    "general": {
+        "back": "BACK",
+        "delete": "- Delete",
+        "add": "+ Add",
+        "uploadDeviceSerialNumbers": "Upload Device Serial Numbers:",
+        "deviceSerialNumbers": "Device Serial Numbers",
+        "deviceSerialNumber": "Device Serial Number",
+        "addDeviceSubHeading": "Add Device Serial Numbers",
+        "deviceName": "Device Name",
+        "required": "Required",
+        "waybillReference": "Waybill Reference",
+        "quantity": "Quantity",
+        "summary": "Summary",
+        "cancel": "Cancel"
+    },
+  "exceptions": {
+    "cacheData": "Could not retrieve some cache data sets needed for this page to work correctly. Please contact the system administrator."
+  },
+  "processType": "Type",
+	"processStatus": "Status",
+	"statusDate": "Status Date",
+	"status": "Movement Status",
+	"exception": "Error",
+	"waybillReference": "Waybill Reference",
+	"deviceSerialNumber": "Device Serial Number",
+	"createdByUserName": "Created By User",
+	"deviceSerialNumbers": "Device Serial Numbers",
+	"deviceName": "Device Name",
+	"sentFrom": "Sent From",
+	"to": "To",
+  "receivedAt": "Received At",
+  "materialDocument": "Material Document",
+	"quantity": "Quantity",
+	"dateCreated": "Date Created",
+	"hardwareLocation": "Location",
+	"delete": "- Delete",
+	"add": "+ Add",
+	"statusDescription": "Status Description",
+  "failureMessage": "Failure Message",
+  "deviceStatus": "Device Status",
+	"stockMovementTransactions": {
+	    "stockMovementTransactionsHeading": "Stock Movement Transactions",
+	    "stockMovementTransactionsSubHeading": "List of Stock Movement Transactions",
+	    "stockMovementTransactionsFilter": "Filter List of Stock Movemement Transactions by:",
+	    "startDate": "Start Date",
+	    "endDate": "End Date",
+	    "view": "View",
+	    "edit": "Edit",
+	    "search": "Search",
+	    "clear": "Clear"
+	},
+	"transactionList": {
+		"actions": "Actions"
+	},
+	"viewStockTransaction": {
+		"viewStockTransactionHeading": "View Stock Transaction",
+		"viewStockTransactionSubHeading": "Stock Transaction Information"
+	},
+	"editStockTransaction": {
+		"editStockTransactionHeading": "Edit Stock Transaction",
+		"editStockTransactionSubHeading": "Stock Transaction Information",
+		"editDeviceSerialNumbersSubHeading": "Edit Device Serial Numbers",
+		"resubmit": "Resubmit",
+		"cancelTransaction": "Cancel Transaction",
+		"cancelChanges": "Cancel Changes"
+	},
+	"processTypeNames": {
+		"All": "All",
+		"Issue": "Issue",
+		"Receive": "Receive"
+	},
+  "processStatusNames": {
+    "All": "All",
+    "Cancelled": "Cancelled",
+    "Completed": "Completed",
+    "Failed": "Failed",
+    "Resubmitted": "Resubmitted",
+    "Submitted": "Started",
+    "Validating": "Validating",
+    "ValidationError": "Validation Error"
+  },
+	"failureStatusNames": {
+		"Ok": "Ok",
+		"Exception": "Exception",
+		"InvalidMessage": "Invalid message received.  Please edit the data and resubmit the transaction."
+	},
+  "serialNumberStatusNames": {
+    "InvalidHardwareModel": "Invalid hardware model.",
+    "AlreadyAtDestination": "Already at destination.",
+    "InvalidHardwareLocationFrom": "Invalid hardware location.",
+    "InExistingProcess": "The serial number is already present in an existing process.",
+    "Duplicate": "This serial number has already been added to the process.  You will need to remove/edit it.",
+    "NotIssuedForDestination": "The stock has not been issued for your location.",
+    "Exception": "Error",
+    "Ok": "Ok",
+    "Validating": "Failed to validate serial number"
+  },
+  "messages": {
+    "processFetchAllException": "Could not retrieve the requested processes.  Please try again.",
+    "fetchProcessException": "Could not retrieve the requested process data.  Please try again.",
+    "canonicalError": "Could not retrieve some data needed for this page to work correctly.  Please contact the system administrator" ,
+    "cancellationHeading": "Cancel Transaction",
+    "cancellationMessage": "You are about to cancel this transaction.  Are you sure that you want to proceed?",
+    "resubmitted": "The stock movement request has been resubmitted.",
+    "sentForProcessingMessage": "The transaction has been sent for processing.  Would you like to navigate to the Stock Movements Transactions screen to confirm that it was successfully completed?",
+    "failureMessage": "The transaction could not be sent for processing.  Please try to submit the transaction again.",
+    "cancelMessage": "You are about to cancel all the changes made to this transaction.  Are you sure you want to proceed?",
+    "userHardwareLocationNotFound": "Could not determine your stock handler.  Please contact the system administrator.",
+    "deviceStatusMessage": "The Device Status drop down field is not populated. Please contact the system administrator.",
+    "dataloadingFailureMessage": "Could not retrieve some data needed for this page to work correctly.  Please contact the system administrator.",
+    "userLocationMismatchView": "Your current stock handler does not match this transaction. The data may not display as expected.",
+    "userLocationMismatchEdit": "Your current stock handler does not match this transaction. The data may not display as expected. You will not be able to cancel or resubmit this transaction."
+  }
+}

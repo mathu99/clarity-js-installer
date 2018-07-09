@@ -1,0 +1,18 @@
+{
+	"title": "Gestão de Locale",
+	"error": "Erro",
+	"errorRetrievingConfiguration": "Não foi possível recuperar configuração de slot (slot-configuration.js): __error__",
+	"errorRetrievingLanguages": "Não foi possível recuperar idiomas: __error__",
+	"errorRetrievingLocaleFiles": "Não foi possível recuperar ficheiros locale: __error__",
+	"errorRetrievingDifferences": "Não foi possível recuperar diferenças de locale: __error__",
+	"errorSavingLocaleItem": "Não foi possível guardar item locale: __error__",
+	"errorRemovingLocaleItem": "Não foi possível remover item locale: __error__",
+	"locale": "Local",
+	"fileName": "Nome de Ficheiro",
+	"path": "Caminho",
+	"value": "Valor",
+	"notFoundRemove": "(não encontrado - remover)",
+	"remove": "Remover",
+	"use": "Usar",
+	"lastDateSaved": "guardado em: "
+}

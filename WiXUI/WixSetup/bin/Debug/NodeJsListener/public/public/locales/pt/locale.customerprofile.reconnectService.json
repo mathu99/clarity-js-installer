@@ -1,0 +1,36 @@
+{
+
+  "hardwareandservices": {
+    "scheduledate": "$t(locale.customerprofile.disconnectservice:hardwareandservices.scheduledate)",
+    "reconnectreason": "Motivo para Reconectar:",
+    "continue": "$t(locale.customerprofile.disconnectservice:hardwareandservices.continue)",
+    "resonselect": "$t(locale.customerprofile.disconnectservice:hardwareandservices.resonselect)",
+    "monthselect": "$t(locale.customerprofile.disconnectservice:hardwareandservices.monthselect)",
+    "reconnecttext": "Reconectar",
+    "submit": "$t(locale.customerprofile.disconnectservice:hardwareandservices.submit)",
+    "cancel": "$t(locale.customerprofile.disconnectservice:hardwareandservices.cancel)",
+    "note": "$t(locale.customerprofile.disconnectservice:hardwareandservices.note)",
+    "selectvalidreason": "$t(locale.customerprofile.disconnectservice:hardwareandservices.selectvalidreason)",
+    "customernotexist": "$t(locale.customerprofile.disconnectservice:hardwareandservices.customernotexist)",
+    "customernotfound": "$t(locale.customerprofile.disconnectservice:hardwareandservices.customernotfound)",
+    "reconnectmessage": " __servicename__  foi agendado em  __schedDate__  para reconexão. ",
+    "schedulereconnectmessage": " foi agendado em  __recConnectDate__  para reconexão. ",
+    "techerror": "$t(locale.customerprofile.disconnectservice:hardwareandservices.techerror)",
+    "problemoccurred": "Ocorreu um problema ao reconectar o serviço ",
+    "crmerrormessage": "$t(locale.customerprofile.disconnectservice:hardwareandservices.crmerrormessage)",
+    "recschedconfmessage": "__servicename__  foi agendado em  __recDate__  para reconexão.",
+    "recconfmessage": "__servicename__  foi reconectado com êxito.",
+    "schednotetext": "__prnserviceName__ foi agendado pra ser reconectado em  __recscheddate__ .",
+    "notetext": " __prnserviceName__ foi Reconectado com Êxito.",
+    "noteschedaddontext": " __addonservice__  foi agendado para ser Reconectado em __addonscheddate__ .",
+    "noteaddontext": "__addonservice__ foi agendado para ser Reconectado com Êxito.",
+    "recerrormessage1": "Por favor, seleccionar qualquer serviço para reconectar",
+    "recerrormessage2": "A data para reconectar o serviço principal não deve ser anterior à data de hoje.",
+    "recerrormessage3": "A data para reconectar o serviço adicional não deve ser anterior à data de hoje.",
+    "recerrormessage4": "A data de reconexão do serviço adicional deve ser posterior à data de reconexão do serviço principal.",
+    "recerrormessage5": "Por favor, seleccionar primeiro o serviço principal para reconectar",
+    "recerrormessage6": "Por favor, seleccionar qualquer serviço adicional para reconectar",
+    "noServicesToReconnect": "Não há produtos para reconectar."
+
+  }
+}

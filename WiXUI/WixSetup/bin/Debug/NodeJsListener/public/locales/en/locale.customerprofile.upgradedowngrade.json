@@ -1,0 +1,34 @@
+{
+	"general": {
+		"customerDoesNotExist":"Customer does not exist",
+		"unableToFindCustomer":"Unable to find customer",
+		"errorMessageTitle": "The following error occurred:",
+		"hasBeenScheduledForDowngrade": " has been scheduled to be Downgraded to ",
+		"on":" on ",
+		"hasBeenUpgraded":" has been Upgraded to ",
+		"hasBeenScheduledForUpgrade": " has been scheduled to be Upgraded to ",
+		"submit":"Submit",
+		"cancel":"Cancel",
+		"upgradeDowngrade":"Upgrade - Downgrade",
+		"invalidData":"There is invalid Data",
+		"selectServiceMessage":"Please select service to upgrade or downgrade",
+		"dateLessThanTodayMessage":"Date for principal service should not be older than today.",
+		"changePackage":"Change Package",
+		"noServicesToUpgradeDowngrade": "No products to upgrade/downgrade."
+	},
+	"months": {
+		"January":"January",
+		"February":"February",
+		"March":"March",
+		"April":"April",
+		"May":"May",
+		"June":"June",
+		"July":"July",
+		"August":"August",
+		"September":"September",
+		"October":"October",
+		"November":"November",
+		"December":"December"
+	}
+	
+}

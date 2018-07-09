@@ -1,0 +1,29 @@
+{
+	
+	"hardwareandservices": {
+		"scheduledate": "Scheduled Date:",
+		"disconnectreason": "Disconnect Reason:",
+		"continue": "Continue",
+		"resonselect":"select reason",
+		"monthselect":"select",
+		"disconnecttext":"Disconnect",
+		"selectvalidreason":"Select valid reason",
+		"submit":"Submit",
+		"cancel":"Cancel",
+		"note":"Note",
+		"noServicesToDisconnect":"No products to disconnect.",
+		"customernotexist":"Customer does not exist",
+		"customernotfound":"Unable to find customer",
+		"scheduledisconnectmessage":" has been scheduled on  __disConnectDate__  for disconnection.",
+		"techerror":"Technical Error",
+		"problemoccurred":"Problem has occurred while disconnecting service",
+		"crmerrormessage":"Problem has occurred while logging an activity in CRM.",
+		"schedulenote":" __prnServiceName__  has been scheduled on  __prnMonth__  for disconnection. ",
+		"nonschedulenote":" __prSeviceName__  has been scheduled for disconnection on charge until date. ",
+		"schedulenoteforaddon":" __addOnServiceName__  has been scheduled on  __addOnMonth__  for disconnection. ",
+		"nonschedulenoteforaddon":" __addOnServiceName__  has been scheduled for disconnection on charge until date. ",
+		"diserrormessage1":"Please select any service to disconnect",
+		"diserrormessage2":"You must select all add on services, if you are disconnecting principal service",
+		"diserrormessage3":"Selected month for Add on  must not be later than principal service"
+	}
+}

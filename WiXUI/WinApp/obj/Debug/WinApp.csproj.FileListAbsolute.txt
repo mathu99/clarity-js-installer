@@ -1,0 +1,12 @@
+C:\Code\JS\WiXUI\WinApp\bin\Debug\Help.rtf
+C:\Code\JS\WiXUI\WinApp\bin\Debug\ReadMe.txt
+C:\Code\JS\WiXUI\WinApp\bin\Debug\WinApp.exe.config
+C:\Code\JS\WiXUI\WinApp\bin\Debug\WinApp.exe
+C:\Code\JS\WiXUI\WinApp\bin\Debug\WinApp.pdb
+C:\Code\JS\WiXUI\WinApp\obj\Debug\WinApp.csprojAssemblyReference.cache
+C:\Code\JS\WiXUI\WinApp\obj\Debug\WinApp.Form1.resources
+C:\Code\JS\WiXUI\WinApp\obj\Debug\WinApp.Properties.Resources.resources
+C:\Code\JS\WiXUI\WinApp\obj\Debug\WinApp.csproj.GenerateResource.cache
+C:\Code\JS\WiXUI\WinApp\obj\Debug\WinApp.csproj.CoreCompileInputs.cache
+C:\Code\JS\WiXUI\WinApp\obj\Debug\WinApp.exe
+C:\Code\JS\WiXUI\WinApp\obj\Debug\WinApp.pdb

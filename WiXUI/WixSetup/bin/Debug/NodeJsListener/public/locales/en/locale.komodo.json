@@ -1,0 +1,220 @@
+{
+  "externalLinks": {
+    "reports": "Reports",
+    "technical": "Help",
+    "errorCodes": "Error Codes",
+    "faqs": "FAQ's",
+    "howTos": "How To's",
+    "news": "News & Announcements ",
+    "navigator": "Navigator"
+  },
+  "utilities": "Utilities",
+  "login": {
+    "username": "Username",
+    "password": "Password",
+    "country": "Country",
+    "title": "CLARITY",
+    "login": "Login",
+    "selectCountryPrompt": "Select a country...",
+    "sessionExpiryTitle": "Your session has ended",
+    "noConnectionError": "Clarity does not yet have an active connection to the server.  Please wait a while and then try again.",
+    "loginFailedError": "The following login error has been reported: __loginError__",
+    "authenticationFailedError": "The following authentication error has been reported: __error__",
+    "authoriseFailedError": "The following authorisation error has been reported: ",
+    "authorisation": "Authorise User",
+    "isAuthorised": "has been successfully authorised.",
+    "optionsLink": "Change Language",
+    "changePasswordLink": "Change Password | ",
+    "changeLanguageLabel": "Change Application Language:",
+    "couldNotLoadCountries": "Could not load the list of countries.  Please wait a short while and then refresh your browser.  If this doesn't help please contact service desk.",
+    "noSystemAccess": "You do not have access to any system functionality.  Please contact the system administrator.",
+    "getOutstandingOfflineTasksStatusErrorTitle": "Could not determine outstanding offline task status"
+  },
+  "logout": {
+    "successTitle": "User Logged Out",
+    "successMessage": " has successfully logged out of the system.",
+    "failureTitle": "Logout Failed",
+    "onlineRequiredForLogout": "You need to go back online before you can logout.",
+    "noConnection": "You cannot logout at present as you do not have an active connection to the server.",
+    "sessionLoggedOut": "Your current session has been logged out.  It is possible that your credentials have been used to log in on another machine."
+  },
+  "shell": {
+    "logout": "Logout",
+    "menu": "Menu",
+    "search": "Search",
+    "searchCustomer": "Customer",
+    "searchQuote": "Quote",
+    "searchCase": "Case",
+    "workOffline": "Work Offline",
+    "workOnline": "Work Online",
+    "searchAgent": "Agent",
+    "searchDevice": "Device",
+    "searchProcessResponseEmpty": "There are no results to display.",
+    "searchProcessResponse": "Process Response",
+    "rolesMismatch": "User Role Conflict",
+    "oldVersion": "Old version.",
+    "version": "Version",
+    "reopenBrowser": "Please re-open your browser to get updates.",
+    "serviceUpdate": "The Clarity Service is busy updating. There may be some delay and your browser may be unresponsive for a few seconds. Please wait for this message to go away before continuing.",
+    "serviceUpdateShort": "The Clarity Service is busy updating.\n Wait to login.",
+    "searchResultsNotFound": "No results found",
+    "searchResults": "Search results",
+    "changeLanguage": "Change Language"
+  },
+  "system": {
+    "clarityRoles": "Clarity Roles",
+    "iccRoles": "ICC Roles",
+    "crmRoles": "CRM Roles",
+    "rolesMismatchMessage": "Your roles do not match in all the systems.",
+    "contactServiceDesk": "Please contact service desk as this could cause problems when submitting messages."
+  },
+  "modules": {
+    "restartMessage": "You must restart the application for the new modules to take effect.\nClick OK to restart the application now."
+  },
+  "validations": {
+    "maxLengthDefaultErrorMessage": "__displayName__ cannot exceed __maxLength__ characters",
+    "minLengthDefaultErrorMessage": "__displayName__ must be at least __minLength__ characters",
+    "regExDefaultErrorMessage": "__displayName__ is not valid",
+    "requiredDefaultErrorMessage": "__displayName__ is required",
+    "typeDecimalDefaultErrorMessage": "Not a valid decimal number",
+    "typeNumberDefaultErrorMessage": "Not a valid number",
+    "typeBoolDefaultErrorMessage": "Not a valid boolean value",
+    "typeDateDefaultErrorMessage": "Not a valid date",
+    "typeUnknownDefaultErrorMessage": "Unrecognised type",
+    "provideMobiledetails": "Please specify both the mobile code and number.",
+    "typeDateErrorMessage": "Date should be greater than today's date",
+    "textErrorForAlphabetic": "should be alphabetic",
+    "identificationErrorMessage": "The 11th digit must be a 0 or a 1"
+  },
+  "busyIndicator": {
+    "typeBusy": "Busy",
+    "typeLoading": "Loading",
+    "typeProcessing": "Processing",
+    "typeLogin": "Logging In"
+  },
+  "debug": {
+    "title": "Debug Window",
+    "time": "Time",
+    "source": "Source",
+    "message": "Message",
+    "sourceFilter": "Source Filter",
+    "sourceFilterPrompt": "Select a source filter...",
+    "search": "Search",
+    "includeServerLogs": "Include server logs?",
+    "clearLog": "Clear Log",
+    "failedMessagesTitle": "Failed Messages"
+  },
+  "inbox": {
+    "title": "Inbox",
+    "clearMessage": "Are you sure you want to clear all your inbox messages?",
+    "timeReceived": "Time Received",
+    "timePublished": "Time Published",
+    "eventName": "Event Name",
+    "messageDetailTitle": "Inbox Message Detail",
+    "close": "Close",
+    "clear": "Clear Inbox"
+  },
+  "localization": {
+    "headingMessage": "Change Language",
+    "restartMessage": "You must restart the application for the newly selected language to take effect.\nClick OK to restart the application now."
+  },
+  "controller": {
+    "invalidDataMessage": "Please provide valid data for all fields: ",
+    "item": "Item: "
+  },
+  "controls": {
+    "datagrid": {
+      "defaultDeleteText": "Are you sure you want to delete this item?",
+      "deleteTitle": "Delete",
+      "booleanYes": "$t(controls.messageBox.yes)",
+      "booleanNo": "$t(controls.messageBox.no)",
+      "edit": "Edit",
+      "done": "Done",
+      "delete": "Delete"
+    },
+    "pager": {
+      "next": "Next",
+      "previous": "Previous",
+      "first": "First",
+      "last": "Last"
+    },
+    "messageBox": {
+      "cancel": "Cancel",
+      "ok": "Ok",
+      "no": "No",
+      "yes": "Yes",
+      "accept": "Accept",
+      "decline": "Decline"
+    },
+    "datepicker": {
+      "days": [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" ],
+      "daysShort": [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun" ],
+      "daysMin": [ "Su", "Mo", "Tu", "We", "Th", "Fr", "Sa", "Su" ],
+      "months": [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ],
+      "monthsShort": [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ],
+      "today": "Today"
+    },
+    "toggleButton": {
+      "on": "ON",
+      "off": "OFF"
+    },
+    "fileReader": {
+      "uploadFiles": "Upload File(s)"
+    }
+  },
+  "validation": {
+    "datepicker": {
+      "invalidFormat": "__displayName__ must be in the form dd/mm/yyyy (e.g. 31/12/2000)",
+      "invalidDay": "__displayName__ - day value is not valid",
+      "invalidMonth": "__displayName__ - month value is not valid",
+      "invalidYear": "__displayName__ - year value is not valid",
+      "invalidMinDate": "__displayName__ is less than the valid range of dates",
+      "invalidMaxDate": "__displayName__ is greater than the valid range of dates"
+    }
+  },
+  "prerequisites": {
+    "title": "Prerequisites Required for this Application ",
+    "redirect": "Go to Login Page",
+    "download": "Download",
+    "support": {
+      "title": "Support",
+      "description": "If you are on a MultiChoice domain or you need any other assistance please contact service desk on extension 3555."
+    },
+    "nodejs": {
+      "description": "In order to use Clarity on a desktop you need to install the Clarity Service on your computer. It runs Clarity on your local machine.",
+      "installationDescription": "Select the download link below and run the installation once the download completes.",
+      "startService": "Once installed please refresh the Clarity page and then click on the Go to Login Page Button. If you still see the prerequisites page there could be an issue with the service. You will have to check if the service is running, to do so you will have to open Task Scheduler by clicking on Start, click Control Panel, double-click Administrative Tools, and then double-click Task Scheduler. Find the Clarity Service under the list of local tasks, right click and select run from the options, ensure the status changes to running.",
+      "download": "Windows Installer (.exe)",
+      "serverDownload": "Clarity (.msi)",
+      "version": "We have detected that the version installed __localServerVersion__ does not match the required version __localServerRequiredVersion__, you will need to download and install the latest version."
+    }
+  },
+  "searchProcessResponse": {
+    "title": "Search Process Responses",
+    "invalidTerm": "Please enter a search term that is at least 3 characters long."
+  },
+  "offline": {
+    "workOffline": "Work Offline",
+    "workOnline": "Work Online",
+    "workOfflineConfirmationTitle": "Offline Confirmation",
+    "workOfflineConfirmationMessage": "You are about to go into 'offline' mode.  You will only be able to access offline functionality until you go back online.  Are you sure that you want to continue?",
+    "workOnlineConfirmationTitle": "Online Confirmation",
+    "workOnlineConfirmationMessage": "You are about to go into 'online' mode.  You will only be able to go back into 'offline' mode when you have an active connection to the server.  Are you sure that you want to continue?",
+    "outstandingOfflineTasksTitle": "Outstanding Offline Tasks",
+    "outstandingOfflineTasksErrorTitle": "Outstanding Offline Tasks (Error)"
+  },
+  "featureToggles": {
+    "retrieveFailure": "Could not retrieve the feature toggles.  Error: __error__",
+    "isEnabledError": "Could not determine feature toggle '__name__'.  Error: __error__",
+    "empty": "No feature toggles have been loaded.",
+    "unknownValue": "Feature toggle value '__value__' not supported.  It must be either 'true' or 'false'."
+  },
+  "messaging": {
+    "deliveryFailure": "Your message could not be delivered.  Please try again."
+  },
+  "recentCustomers": "Recent Customers",
+  "application": "Application",
+  "eventDateTime": "Event Date Time",
+  "eventName": "Event Name",
+  "fileType": "File type is not supported."
+}
