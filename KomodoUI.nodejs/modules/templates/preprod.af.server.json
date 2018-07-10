@@ -1,0 +1,5 @@
+{
+  "clarityUpdateUrl": "http://APPFEFMT.af.ds.naspers.com/komodoui.ui",
+  "updateUrl": "http://APPFEFMT.af.ds.naspers.com/komodoui.ui/UpdateFiles",
+  "pusherUrl": "http://APPFEFMT.af.ds.naspers.com/Fefmiddletier/api/ConnectedUsers"
+}

@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "updateSiteIntervalInMinutes": 30,
+  "pusherUpdateIntervalInMinutes": 480,
+  "serviceUpdateIntervalInMinutes": 480,
+  "repositoryPortNumber": 51800,
+  "clientNotificationsPort": 51802,
+  "clarityPortNumber": 51801,
+  "pushNotificationPort": 51804,
+  "log": {
+    "level": "error"
+  }
+}

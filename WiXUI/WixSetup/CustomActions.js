@@ -502,7 +502,7 @@ function CreateServerFileCA() {
     var serverFile = new ServerFile(selectedBranch);
     LogMessage(serverFile.toJsonString());
     var fso = new ActiveXObject("Scripting.FileSystemObject");
-    var createdFile = fso.CreateTextFile(installedPath + '\\server.json', true);
+    var createdFile = fso.CreateTextFile(installedPath + '\\modules\\configuration\\server.json', true);
     createdFile.WriteLine(serverFile.toJsonString());
     createdFile.Close();
     LogMessage('Goodbye from CreateServerFile');

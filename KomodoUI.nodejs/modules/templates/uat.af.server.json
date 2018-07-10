@@ -1,0 +1,5 @@
+{
+  "clarityUpdateUrl": "http://clarityafrica-uat.multichoice.co.za/komodoui.ui",
+  "updateUrl": "http://clarityafrica-uat.multichoice.co.za/komodoui.ui/UpdateFiles",
+  "pusherUrl": "http://clarityafrica-uat.multichoice.co.za/Fefmiddletier/api/ConnectedUsers"
+}

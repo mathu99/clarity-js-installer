@@ -1,0 +1,12 @@
+{
+  "applicationmanifest": "./applicationmanifest.json",
+  "deploymentmanifest": "/deploymentmanifest.json",
+  "temporaryDownloadFolder": "./TempFolder",
+  "hostedUpdateFilesFolder": "./public/UpdateFiles",
+  "serviceUpdateIntervalInMinutes": 480,
+  "rehostUpdateIntervalInMinutes": 240,
+  "port": "51803",
+  "log": {
+    "level": "error"
+  }
+}

@@ -1,0 +1,11 @@
+C:\Code\clarity-js-installer\WiXUI\WixSetup\bin\Debug\WixSetup.msi
+C:\Code\clarity-js-installer\WiXUI\WixSetup\bin\Debug\WixSetup.wixpdb
+obj\Debug\BranchDialog.wixobj
+obj\Debug\NodeJsListenerServiceFragment.wixobj
+obj\Debug\Product.wixobj
+obj\Debug\ProgressDialog.wixobj
+obj\Debug\SetupDialog.wixobj
+obj\Debug\CountryDialog.wixobj
+obj\Debug\ClarityServiceInstaller.wixproj.BindContentsFileListnull.txt
+obj\Debug\ClarityServiceInstaller.wixproj.BindOutputsFileListnull.txt
+obj\Debug\ClarityServiceInstaller.wixproj.BindBuiltOutputsFileListnull.txt

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>KomodoUI.nodejs</Name>
+    <RootNamespace>KomodoUI.nodejs</RootNamespace>
+    <NodeExePath />
+    <NodeExeArguments>.</NodeExeArguments>
+    <ScriptArguments />
+    <NodejsPort />
+    <LaunchUrl />
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <StartupFile>servicebootstrapper.js</StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>de0e9f6d-d055-4c27-82a9-f25db75f5404</ProjectGuid>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <AnalysisIgnoredDirectories>node_modules</AnalysisIgnoredDirectories>
+  </PropertyGroup>
+  <PropertyGroup>
+    <!-- Makes the TypeScript compilation task a no-op -->
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <TypeScriptEnabled>false</TypeScriptEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="clarity.ico" />
+    <Content Include="clarity.png" />
+    <Content Include="License.rtf" />
+    <Content Include="modules\configuration\application-settings.json" />
+    <Content Include="modules\configuration\repository.json" />
+    <Content Include="modules\configuration\server.json" />
+    <Content Include="modules\configuration\service-updater.json" />
+    <Content Include="modules\templates\devshared.za.server.json" />
+    <Content Include="modules\templates\devtest.af.server.json" />
+    <Content Include="modules\templates\devtest.za.server.json" />
+    <Content Include="modules\templates\preprod.af.server.json" />
+    <Content Include="modules\templates\prod.af.server.json" />
+    <Content Include="modules\templates\prod.za.server.json" />
+    <Content Include="modules\templates\support.af.server.json" />
+    <Content Include="modules\templates\support.za.server.json" />
+    <Content Include="modules\templates\uat.af.server.json" />
+    <Content Include="modules\templates\uat.za.server.json" />
+    <Content Include="node_modules\md5-file\LICENSE.md" />
+    <Content Include="node_modules\md5-file\package.json" />
+    <Content Include="node_modules\md5-file\README.md" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clarityservice.js" />
+    <Compile Include="modules\client-pusher.js" />
+    <Compile Include="modules\compressed-downloader.js" />
+    <Compile Include="modules\clarity.js" />
+    <Compile Include="modules\configuration.js" />
+    <Compile Include="modules\extensions.js" />
+    <Compile Include="modules\io-adapter-legacy.js" />
+    <Compile Include="modules\io-service.js" />
+    <Compile Include="modules\logger.js" />
+    <Compile Include="modules\push-notification.js" />
+    <Compile Include="modules\repository.js" />
+    <Compile Include="modules\sequential-downloader.js" />
+    <Compile Include="node_modules\md5-file\index.js" />
+    <Compile Include="node_modules\md5-file\promise.js" />
+    <Compile Include="server.js" />
+    <Compile Include="servicebootstrapper.js" />
+    <Compile Include="test-clarity-updater.js" />
+    <Compile Include="tests\ClarityUpdaterUnitTest.js">
+      <SubType>Code</SubType>
+      <TestFramework>Mocha</TestFramework>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="modules\" />
+    <Folder Include="modules\configuration\" />
+    <Folder Include="modules\templates\" />
+    <Folder Include="tests\" />
+    <Folder Include="node_modules\" />
+    <Folder Include="node_modules\md5-file\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,39 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-  <Product Id="*" Name="Clarity Installer" Language="1033" Version="1.0.0.0" Manufacturer="Multichoice" UpgradeCode="5b0d1312-348e-492c-9447-de720c151cd8">
-    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+  <Product Id="*" 
+           Name="Clarity Installer" 
+           Language="1033" 
+           Version="1.0.0.0" 
+           Manufacturer="Multichoice" 
+           UpgradeCode="5b0d1312-348e-492c-9447-de720c151cd8">
+    
+    <Package 
+      InstallerVersion="200" 
+      Compressed="yes" InstallScope="perMachine" />
 
     <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
     <MediaTemplate EmbedCab="yes" />
 
     <Feature Id="ProductFeature" Title="WinAppSetup" Level="1">
+      <ComponentGroupRef Id="fragmentComponentRefGroup" />
       <ComponentGroupRef Id="ProductComponents" />
+      <ComponentRef Id="ApplicationShortcutDesktop" />
     </Feature>
 
     <UIRef Id="SetupDialogUI" />
 
     <Binary Id="bgPic" SourceFile="images/bg.bmp"/>
     <Binary Id="cancelbtn" SourceFile="images/cancelbtn.bmp"/>
+    <Icon Id="clarity.ico" SourceFile="$(var.ProjectDir)..\..\KomodoUI.nodejs\clarity.ico" />
+    
     <Property Id="Cancel">cancelbtn</Property>
-  </Product>
 
-  <Fragment>
     <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="ProgramFilesFolder">
-        <Directory Id="INSTALLFOLDER" Name="ClarityNew" />
+        <Directory Id="MultiChoice" Name="MultiChoice">
+          <Directory Id="INSTALLLOCATION" Name="NodeJsListener" />
+        </Directory>
+      </Directory>
+
+      <Directory Id="DesktopFolder" Name="Desktop">
+        <Component Id="ApplicationShortcutDesktop" Guid="*">
+          <Shortcut Id="ApplicationDesktopShortcut"
+             Name="Clarity"
+             Description="Run Clarity Locally"
+             Target="[ProgramFilesFolder]Google\Chrome\Application\Chrome.exe"
+             Icon="clarity.ico"
+             IconIndex="0"
+             Arguments="[URL]">
+          </Shortcut>
+          <RemoveFolder Id="DesktopFolder" On="uninstall"/>
+          <RegistryValue
+            Root="HKCU"
+            Key="Software/Clarity"
+            Name="installed"
+            Type="integer"
+            Value="1"
+            KeyPath="yes"/>
+        </Component>
       </Directory>
     </Directory>
-  </Fragment>
+    
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLLOCATION" />
+    <Property Id="URL" Value="http://clarity:51801" />
+  
+  </Product>
+
 
   <Fragment>
     <EnsureTable Id="ComboBox"/>
-    <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+    <ComponentGroup Id="ProductComponents" Directory="INSTALLLOCATION">
       <Component Id="Executable" Guid="3252A379-9249-4DB4-9F7F-C6A10F68F88A">
         <File Id="WinAppExe" Name="WinApp.exe" Source="..\WinApp\bin\Debug\Winapp.exe" Vital="yes" />
         <RemoveFolder Id="INSTALLDIR" On="uninstall" />
-      </Component>
-      <Component Id="Documentation" Guid="A70DAF37-0EAC-49BD-A8B0-2C5D8AF81085">
-        <File Id="ReadMeTxt" Name="ReadMe.txt" Source="..\WinApp\bin\Debug\ReadMe.txt" Vital="yes" />
       </Component>
     </ComponentGroup>
     <CustomAction Id="CreateServerFile"
@@ -43,10 +78,10 @@
                   Impersonate="no"
                   Return="check"/>
     <CustomAction Id="SetCustomActionDataValue" Return="check"
-              Property="CreateServerFile" Value="INSTALLEDPATH=[INSTALLFOLDER];SELECTEDCOUNTRY=[COUNTRIES];SELECTEDBRANCH=[BRANCHES]" />
+              Property="CreateServerFile" Value="INSTALLEDPATH=[INSTALLLOCATION];SELECTEDCOUNTRY=[COUNTRIES];SELECTEDBRANCH=[BRANCHES]" />
     <InstallExecuteSequence>
       <Custom Action="SetCustomActionDataValue" Before="CreateServerFile" />
-      <Custom Action="CreateServerFile" Before="InstallFinalize" />
+      <Custom Action="CreateServerFile" Before="InstallFinalize">NOT Installed OR MaintenanceMode="Modify"</Custom>
     </InstallExecuteSequence>
   </Fragment>
 

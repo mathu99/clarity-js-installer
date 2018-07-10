@@ -40,7 +40,7 @@
                   Value="[COUNTRIES]" />
 
 
-      <CustomAction Id="CopyThis" ExeCommand="cmd /c copy /y MyLogFile.txt C:\Program Files (x86)\ClarityNew" Directory="INSTALLFOLDER" Impersonate="no" Execute="deferred" Return="asyncWait" />
+      <CustomAction Id="CopyThis" ExeCommand="cmd /c copy /y MyLogFile.txt C:\Program Files (x86)\ClarityNew" Directory="INSTALLLOCATION" Impersonate="no" Execute="deferred" Return="asyncWait" />
 
       <InstallExecuteSequence>
         <Custom Action="CopyThis" After="InstallFiles" ></Custom>

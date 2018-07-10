@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "WixSetup", "WixSetup\WixSetup.wixproj", "{E59E1A6A-FEE0-4142-9644-5621C18D6666}"
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "ClarityServiceInstaller", "WixSetup\ClarityServiceInstaller.wixproj", "{E59E1A6A-FEE0-4142-9644-5621C18D6666}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
