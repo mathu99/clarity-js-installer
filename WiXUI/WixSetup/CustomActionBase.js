@@ -1,4 +1,3 @@
-var urlEndpoint = 'http://10.100.27.213/fefmiddletier-tripod/api/installationconfiguration';	/* Retrieved from ProductionZA.js */
 // CustomActionBase.js 
 // 
 // Template for WIX Custom Actions written in Javascript.

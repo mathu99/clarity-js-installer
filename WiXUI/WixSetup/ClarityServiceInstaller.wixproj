@@ -6,7 +6,7 @@
     <ProductVersion>3.8</ProductVersion>
     <ProjectGuid>e59e1a6a-fee0-4142-9644-5621c18d6666</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
-    <OutputName>WixSetup</OutputName>
+    <OutputName>ClarityService</OutputName>
     <OutputType>Package</OutputType>
     <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' AND '$(MSBuildExtensionsPath32)' != '' ">$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.targets</WixTargetsPath>
     <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' ">$(MSBuildExtensionsPath)\Microsoft\WiX\v3.x\Wix.targets</WixTargetsPath>
@@ -87,7 +87,8 @@
   <Import Project="$(WixTargetsPath)" />
   <PropertyGroup>
     <PreBuildEvent>cd ../../..
-type $(ConfigurationName).js CustomActions.js  &gt; temp.js</PreBuildEvent>
+del CustomActions.js
+type $(ConfigurationName).js CustomActionBase.js  &gt; CustomActions.js</PreBuildEvent>
   </PropertyGroup>
   <!--
 	To modify your build process, add your task inside one of the targets below and uncomment it.
