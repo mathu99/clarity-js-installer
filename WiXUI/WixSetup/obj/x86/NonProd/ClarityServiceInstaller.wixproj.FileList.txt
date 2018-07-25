@@ -1,5 +1,5 @@
-C:\Code\clarity-js-installer\WiXUI\WixSetup\bin\x86\NonProd\WixSetup.msi
-C:\Code\clarity-js-installer\WiXUI\WixSetup\bin\x86\NonProd\WixSetup.wixpdb
+C:\Code\clarity-js-installer\WiXUI\WixSetup\bin\x86\NonProd\ClarityService.msi
+C:\Code\clarity-js-installer\WiXUI\WixSetup\bin\x86\NonProd\ClarityService.wixpdb
 obj\x86\NonProd\BranchDialog.wixobj
 obj\x86\NonProd\NodeJsListenerServiceFragment.wixobj
 obj\x86\NonProd\Product.wixobj

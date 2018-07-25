@@ -12,7 +12,7 @@
       <TextStyle Id="TahomaNormal" FaceName="Tahoma" Size="8" />
       <Property Id="DefaultUIFont" Value="TahomaNormal" />
 
-      <Dialog Id="SetupDialog" Width="400" Height="300" Title="Clarity Service Installer">
+      <Dialog Id="SetupDialog" Width="400" Height="300" Title="Clarity Service Installer ($(var.Environment))">
 
         <Control Id="background" Type="Bitmap" Text="bgPic" Height="300" Width="400" X="0" Y="0" TabSkip="no" />
 

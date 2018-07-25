@@ -1,4 +1,4 @@
-var urlEndpoint = 'http://10.100.27.213/fefmiddletier-tripod/api/installationconfiguration';	/* Retrieved from ProductionZA.js */
+var urlEndpoint = 'http://10.100.27.213/fefmiddletier-tripod/api/installationconfiguration';	/* Retrieved from ProductionAF.js */
 // CustomActionBase.js 
 // 
 // Template for WIX Custom Actions written in Javascript.
@@ -446,15 +446,8 @@ var SpecialFolders = {
 
 var urlEndpoint = 'http://03rnb-esbsyn96.za.ds.naspers.com:9998'; //'http://10.100.27.213/fefmiddletier-tripod/api/installationconfiguration';/* 'http://03rnb-esbsyn96.za.ds.naspers.com:9998';
 
-/*
-#if ProductionAF
-    var testVar = 'prod_af';
-#endif
-    var testVar = 'prod_za';*/
-    
 function GetCountiresCA() {
     try {
-        LogMessage(testVar);
         LogMessage("Initiating GetCountires");
         var countries = HttpGet(urlEndpoint + '/api/servers');
         if (countries.servers === null || countries.servers.length === 0) {

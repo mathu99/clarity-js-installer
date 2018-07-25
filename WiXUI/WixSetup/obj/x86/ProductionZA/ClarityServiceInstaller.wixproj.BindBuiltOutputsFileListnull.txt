@@ -1,2 +1,2 @@
-C:\Code\clarity-js-installer\WiXUI\WixSetup\bin\x86\ProductionZA\ClarityServiceInstaller.msi
-C:\Code\clarity-js-installer\WiXUI\WixSetup\bin\x86\ProductionZA\ClarityServiceInstaller.wixpdb
+C:\Code\clarity-js-installer\WiXUI\WixSetup\bin\x86\ProductionZA\ClarityService.msi
+C:\Code\clarity-js-installer\WiXUI\WixSetup\bin\x86\ProductionZA\ClarityService.wixpdb
