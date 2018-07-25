@@ -1,0 +1,10 @@
+ Volume in drive C has no label.
+ Volume Serial Number is F6F4-8C6D
+
+ Directory of C:\Code\clarity-js-installer\WiXUI\WixSetup\bin\x86\ProductionZA
+
+2018/07/25  09:41    <DIR>          .
+2018/07/25  09:41    <DIR>          ..
+2018/07/25  09:41                 0 tmp.txt
+               1 File(s)              0 bytes
+               2 Dir(s)  793ÿ274ÿ060ÿ800 bytes free

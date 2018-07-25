@@ -1,0 +1,2 @@
+C:\Code\clarity-js-installer\WiXUI\WixSetup\bin\Release\WixSetup.msi
+C:\Code\clarity-js-installer\WiXUI\WixSetup\bin\Release\WixSetup.wixpdb

@@ -9,7 +9,7 @@
 
       <TextStyle Id="TahomaBig" FaceName="Tahoma" Size="22" Bold="yes" Red="255" Green="255" Blue="255" />
       
-      <Dialog Id="ProgressDialog" Width="400" Height="300" Title="Clarity Installer" Modeless="yes">
+      <Dialog Id="ProgressDialog" Width="400" Height="300" Title="Clarity Service Installer" Modeless="yes">
 
         <Control Id="background" Type="Bitmap" Text="bgPic" Height="300" Width="400" X="0" Y="0" TabSkip="no" />
 

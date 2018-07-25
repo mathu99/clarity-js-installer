@@ -5,7 +5,7 @@
 
       <DialogRef Id="ProgressDialog"/>
       
-      <Dialog Id="BranchDialog" Width="400" Height="300" Title="Clarity Installer">
+      <Dialog Id="BranchDialog" Width="400" Height="300" Title="Clarity Service Installer">
 
         <Control Id="background" Type="Bitmap" Text="bgPic" Height="300" Width="400" X="0" Y="0" TabSkip="no" />
         <Control Id="header" Type="Bitmap" Text="headerPic" Height="50" Width="400" X="0" Y="0" TabSkip="no" />
@@ -14,12 +14,11 @@
         <Control Id="branchLabel" Type="Text" X="95" Y="115" Height="17" Width="65" Transparent="yes" Text="{\TahomaNormal}Branch:" />
         <Control Id="branchComboBox" Type="ComboBox" ComboList="yes" X="155" Y="112" Width="120" Height="17" Property="BRANCHES" />
         
-        <Control Id="proceedButton" Type="PushButton" Text="[Proceed]" Height="62" Width="222" X="90" Y="180" Bitmap="yes">
-          <!--<Publish Event="DoAction" Value="IisScript_CA">1</Publish>-->
+        <Control Id="proceedButton" Type="PushButton" Text="[Proceed]" Height="40" Width="144" X="200" Y="185" Bitmap="yes">
           <Publish Event="EndDialog" Value="Return">1</Publish>
         </Control>
 
-        <Control Id="cancelButton" Type="PushButton" Text="[Cancel]" Height="40" Width="144" X="135" Y="245" Cancel="yes" Bitmap="yes">
+        <Control Id="cancelButton" Type="PushButton" Text="[Cancel]" Height="40" Width="144" X="55" Y="185" Cancel="yes" Bitmap="yes">
           <Publish Event="EndDialog" Value="Exit" />
         </Control>
 

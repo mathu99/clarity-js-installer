@@ -1,0 +1,6 @@
+obj\x86\ProductionAF\BranchDialog.wixobj
+obj\x86\ProductionAF\NodeJsListenerServiceFragment.wixobj
+obj\x86\ProductionAF\Product.wixobj
+obj\x86\ProductionAF\ProgressDialog.wixobj
+obj\x86\ProductionAF\SetupDialog.wixobj
+obj\x86\ProductionAF\CountryDialog.wixobj

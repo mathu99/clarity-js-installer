@@ -1,0 +1,6 @@
+obj\Release\BranchDialog.wixobj
+obj\Release\NodeJsListenerServiceFragment.wixobj
+obj\Release\Product.wixobj
+obj\Release\ProgressDialog.wixobj
+obj\Release\SetupDialog.wixobj
+obj\Release\CountryDialog.wixobj
